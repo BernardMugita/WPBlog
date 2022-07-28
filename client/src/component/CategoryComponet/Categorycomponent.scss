@@ -1,0 +1,37 @@
+.Categorycomponent {
+    width: 45%;
+    margin: 0.5rem;
+    border-radius: 5px;
+    box-shadow: -1px 1px 5px 0px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: -1px 1px 5px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: -1px 1px 5px 0px rgba(255, 255, 255, 0.75);
+
+    .featured-image img {
+        width: 100%;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .category-details{
+        padding: 0.5rem;
+
+        .categoryname{
+            color: red;
+            text-decoration: underline;
+            font-size: 0.9rem;
+
+            a{
+                text-decoration: none;
+                color: red;
+            }
+        }
+
+        .author{
+            color: gray;
+            font-size: 0.7rem;
+        }
+
+        .no-of-posts{
+            text-align: right;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.Home {
+  height: 100%;
+  background-color: #000000;
+  color: #fff;
+  margin: 0;
+  padding: 0.5rem;
+  box-sizing: border-box;
+
+  .banner-image{
+    height: 10rem;
+    position: relative;
+    background-image: linear-gradient(to bottom right,black,#6a0000);
+    margin-top: -1.5rem;
+    border-radius: 5px;
+    border-bottom: 1px solid #fff;
+
+    p{
+      padding-top: 5rem;
+      font-family: monospace;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+  }
+
+  .blog-posts{
+    padding: 1rem;
+  }
+
+}
