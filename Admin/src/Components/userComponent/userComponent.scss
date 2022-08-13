@@ -1,0 +1,175 @@
+.userComponent {
+    padding: 0.5rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+    align-items: left;
+    justify-content: left;
+    background-color: #fff;
+    color: #000047;
+    box-shadow: -1px 1px 5px 0px rgba(180, 180, 180, 0.75);
+    -webkit-box-shadow: -1px 1px 5px 0px rgba(172, 172, 172, 0.75);
+    -moz-box-shadow: -1px 1px 5px 0px rgba(255, 255, 255, 0.75);
+
+    #vert {
+        display: none;
+    }
+
+    .user-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;
+
+        .user-id {
+            display: none;
+        }
+
+        .user-display-picture {
+            flex: 0.5;
+
+            img {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                border: 1px solid gray;
+
+            }
+        }
+
+        .user-name {
+            flex: 2;
+        }
+
+        .user-email {
+            flex: 2;
+        }
+
+        .user-status {
+            flex: 1;
+
+            .status {
+                &.Active {
+                    padding: 0.5rem;
+                    border-radius: 5px;
+                    color: green;
+                    background-color: rgba(0, 128, 0, 0.371);
+                }
+            }
+        }
+
+    }
+
+    .user-actions {
+        display: flex;
+        gap: 0.5rem;
+        flex: 1;
+
+        .view {
+            border: none;
+            color: #6262ff;
+            background-color: #0000ff38;
+            padding: 0.5rem;
+            border-radius: 10px;
+        }
+
+        .delete {
+            border: none;
+            padding: 0.5rem;
+            background-color: rgba(255, 0, 0, 0.202);
+            color: red;
+            border-radius: 10px;
+        }
+    }
+}
+
+@media only screen and (min-width:660px) {
+    .userComponent {
+        padding: 0.5rem;
+        padding-right: 2rem;
+        margin: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 0.8rem;
+        align-items: center;
+        background-color: #fff;
+        color: #000047;
+        box-shadow: -1px 1px 5px 0px rgba(180, 180, 180, 0.75);
+        -webkit-box-shadow: -1px 1px 5px 0px rgba(172, 172, 172, 0.75);
+        -moz-box-shadow: -1px 1px 5px 0px rgba(255, 255, 255, 0.75);
+
+        #vert {
+            display: block;
+            font-size: 1.6rem;
+            flex: 0.5;
+        }
+
+        .user-details {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex: 8;
+
+            .user-id {
+                flex: 1;
+            }
+
+            .user-display-picture {
+                flex: 0.5;
+
+                img {
+                    width: 3rem;
+                    height: 3rem;
+                    border-radius: 50%;
+                    border: 1px solid gray;
+
+                }
+            }
+
+            .user-name {
+                flex: 2;
+            }
+
+            .user-email {
+                flex: 2;
+            }
+
+            .user-status {
+                flex: 1;
+
+                .status {
+                    &.Active {
+                        padding: 0.5rem;
+                        border-radius: 5px;
+                        color: green;
+                        background-color: rgba(0, 128, 0, 0.371);
+                    }
+                }
+            }
+        }
+
+        .user-actions {
+            display: flex;
+            gap: 0.5rem;
+            flex: 2;
+
+            .view {
+                border: none;
+                color: #6262ff;
+                background-color: #0000ff38;
+                padding: 0.5rem;
+                border-radius: 10px;
+            }
+
+            .delete {
+                border: none;
+                padding: 0.5rem;
+                background-color: rgba(255, 0, 0, 0.202);
+                color: red;
+                border-radius: 10px;
+            }
+        }
+    }
+}

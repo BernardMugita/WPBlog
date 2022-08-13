@@ -15,7 +15,7 @@ export default function Footer() {
     return (
         <FooterContainer>
             <FooterParagraph>
-                &copy;{new Date().getFullYear()} All rights Reversed. <Link className='rights' to="/">WordPortraits</Link>
+                &copy;{new Date().getFullYear()} All rights Reversed. <a href="https://www.bernardmugita.wordportraits.co.ke">WordPortraits</a>
             </FooterParagraph>
         </FooterContainer>
     )

@@ -1,0 +1,168 @@
+.container {
+    background-color: #000047;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+
+    .side-bar{
+        display: block;
+        color: #fff;
+        font-size: 1.4rem;
+
+        .side{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 3;
+
+            #close{
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+        }
+    }
+
+    .site-search {
+        display: none;
+    }
+
+    .site-items {
+        
+        .item {
+            display: flex;
+
+            .items {
+                margin-right: 1rem;
+                font-size: 1.2rem;
+                display: flex;
+                align-items: center;
+                text-align: right;
+                position: relative;
+                cursor: pointer;
+                color: #fff;
+
+                h3 {
+                    font-size: 0.8rem;
+                    color: #fff;
+                }
+
+                img {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    border-radius: 50%;
+                    margin-top: -0.3rem;
+                }
+
+                .counter {
+                    color: #fff;
+                    padding: 0.1rem;
+                    background-color: #6262ff;
+                    width: 1rem;
+                    height: 1rem;
+                    text-align: center;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    font-size: 0.6rem;
+                }
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (min-width:660px) {
+    .container {
+        background-color: #000047;
+        height: auto;
+        padding: 1rem;
+        display: flex;
+
+        .side-bar{
+            display: none;
+        }
+        .site-search {
+            display: block;
+            flex: 1;
+            border: 1px solid #6262ff;            
+            height: 1.7rem;
+            width: fit-content;
+            margin-left: 2rem;
+            border-radius: 5px;
+
+            input {
+                background-color: transparent;
+                border: none;
+                outline: none;
+                color: #fff;
+                margin-top: 0.4rem;
+                width: 80%;
+                padding-left: 1rem;
+                padding-bottom: 0.5rem;
+            }
+
+            #search {
+                margin-right: 0.5rem;
+                margin-top: 0.4rem;
+                float: right;
+                color: #6262ff;
+                cursor: pointer;
+            }
+        }
+
+        .site-items {
+            flex: 2;
+
+            .item {
+                display: flex;
+                float: right;
+
+                .items {
+                    margin-right: 1rem;
+                    font-size: 1.85rem;
+                    display: flex;
+                    align-items: center;
+                    text-align: right;
+                    position: relative;
+                    cursor: pointer;
+                    color: #fff;
+
+                    h3 {
+                        font-size: 0.8rem;
+                        color: #fff;
+                    }
+
+                    img {
+                        width: 2rem;
+                        height: 2rem;
+                        border-radius: 50%;
+                        margin-top: -0.3rem;
+                    }
+
+                    .counter {
+                        color: #fff;
+                        background-color: #6262ff;
+                        width: 1rem;
+                        height: 1rem;
+                        text-align: center;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+        }
+
+    }
+}

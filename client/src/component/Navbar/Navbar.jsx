@@ -8,19 +8,23 @@ import { GrFacebook, GrTwitter, GrInstagram, GrLinkedin } from 'react-icons/gr'
 const Navbar = () => {
   const [show, setShow] = useState(false);
 
+  setTimeout(() => {
+      setShow(false)
+  }, 4000)
+
   return (
     <div className='Navbar'>
       <div className="phone-bar">
         <h1>WordPortraits</h1>
-        <MdOutlineReorder id="reorder" onClick={() => setShow(!show)}/>
+        <MdOutlineReorder id="reorder" onClick={() => setShow(!show)} />
         {
           show ? <div className="drop">
             <div className="close">
-                <MdOutlineClose id="close"onClick={() => setShow(false)}/>
+              <MdOutlineClose id="close" onClick={() => setShow(false)} />
             </div>
             <Link to="/">Home</Link>
             <Link to="/categories">Categories</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contacts">Contact</Link>
 
             <div className="socials">
               <GrFacebook id='soc' />
@@ -31,6 +35,13 @@ const Navbar = () => {
             <h1>WordPortraits</h1>
           </div> : null
         }
+      </div>
+      <div className="screen-bar">
+        <div className="screen-links">
+          <Link to="/">Home</Link>
+          <Link to="/categories">Categories</Link>
+          <Link to="/contacts">Contact</Link>
+        </div>
       </div>
     </div>
   )

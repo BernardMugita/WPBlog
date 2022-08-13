@@ -1,29 +1,74 @@
 .Home {
   height: 100%;
-  background-color: #000000;
+  width: 100%;
   color: #fff;
   margin: 0;
   padding: 0.5rem;
   box-sizing: border-box;
 
-  .banner-image{
-    height: 10rem;
-    position: relative;
-    background-image: linear-gradient(to bottom right,black,#6a0000);
-    margin-top: -1.5rem;
-    border-radius: 5px;
-    border-bottom: 1px solid #fff;
 
-    p{
-      padding-top: 5rem;
+
+  .banner-image {
+    height: 30rem;
+    background-size: cover;
+    position: relative;
+    background-image: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url(../../Resoources/image.jpg);
+    justify-content: center;
+    align-items: center;
+    margin-top: -3rem;
+
+    p {
+      padding: 8rem;
       font-family: monospace;
       font-weight: 700;
-      font-size: 2rem;
+      font-size: 3rem;
+      opacity: 100%;
     }
   }
 
-  .blog-posts{
-    padding: 1rem;
+  .body-component {
+    padding: 0.2rem;
+    display: flex;
+
+    .blog-posts {
+      flex: 3;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .sidebar {
+      display: none;
+    }
   }
 
+}
+
+@media only screen and (min-width:660px) {
+  .Home {
+
+    .banner-image{
+      
+      p{
+        padding: 13rem;
+      }
+    }
+    .body-component {
+      padding: 1rem;
+      display: flex;
+
+      .blog-posts {
+        flex: 3;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .sidebar {
+        display: block;
+        flex: 1;
+        padding: 2rem;
+      }
+    }
+
+  }
 }

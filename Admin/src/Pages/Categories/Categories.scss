@@ -1,0 +1,34 @@
+.Categories{
+    height: 100vh;
+
+    .sidebar{
+        display: none;
+    }
+
+    .category-component{
+
+        .category-body{
+            padding: 1rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 660px) {
+    .Categories{
+        display: flex;
+        height: 100vh;
+    
+        .sidebar{
+            flex: 1;
+            display: block;
+        }
+    
+        .category-component{
+            flex: 5;
+    
+            .category-body{
+                padding: 1rem;
+            }
+        }
+    }
+}

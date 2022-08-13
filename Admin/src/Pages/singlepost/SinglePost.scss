@@ -1,0 +1,223 @@
+.Singlepost {
+    background-color: #000000;
+    height: 100%;
+
+    .sidebar {
+        display: none;
+    }
+
+    .singlepost-component {
+        background-color: #fff;
+
+        .top {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            color: #000047;
+            height: auto;
+
+            .left {
+                padding: 1rem;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                position: relative;
+                box-shadow: -1px 1px 5px 0px rgba(180, 180, 180, 0.75);
+                -webkit-box-shadow: -1px 1px 5px 0px rgba(172, 172, 172, 0.75);
+                -moz-box-shadow: -1px 1px 5px 0px rgba(255, 255, 255, 0.75);
+
+                .label {
+                    text-align: left;
+
+                    h1 {
+                        color: #000047;
+                        font-size: 1.5rem;
+
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 8rem;
+                        border: 3px solid #fff;
+                        object-fit: cover;
+                    }
+                }
+
+                .delete {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    padding: 0.4rem;
+                    cursor: pointer;
+                    font-size: 0.8rem;
+                    color: #ff0000;
+                    background-color: #4700005d;
+                }
+
+                .update {
+                    position: absolute;
+                    right: 65px;
+                    top: 0;
+                    padding: 0.4rem;
+                    cursor: pointer;
+                    font-size: 0.8rem;
+                    color: #008b15;
+                    background-color: #00ff2623;
+                    text-decoration: none;
+                }
+
+                .details {
+                    padding-left: 1rem;
+
+                    h2 {
+                        font-size: 1rem;
+                        color: #000047;
+                        text-decoration: underline;
+                    }
+
+                    .detail-item {
+                        display: flex;
+                        gap: 0.4rem;
+                        line-height: 1.5rem;
+
+                        .itemKey {
+                            color: #000047;
+                        }
+
+                        .itemValue {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            .right {
+                flex: 2;
+            }
+        }
+
+        .bottom {
+            padding: 1rem;
+
+            .stats {
+                padding: 1rem;
+                box-shadow: -1px 1px 5px 0px rgba(180, 180, 180, 0.75);
+                -webkit-box-shadow: -1px 1px 5px 0px rgba(172, 172, 172, 0.75);
+                -moz-box-shadow: -1px 1px 5px 0px rgba(255, 255, 255, 0.75);
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (min-width:660px) {
+    .Singlepost {
+        background-color: #000000;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    
+        .sidebar {
+            display: block;
+            flex: 1;
+        }
+    
+        .singlepost-component {
+            background-color: #fff;
+            flex: 5;
+    
+            .top {
+                padding: 1rem;
+                display: flex;
+                flex-direction: row;
+                gap: 2rem;
+                color: #000047;
+                height: auto;
+    
+                .left {
+                    padding: 1rem;
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: left;
+                    position: relative;
+                    box-shadow: -1px 1px 5px 0px rgba(180, 180, 180, 0.75);
+                    -webkit-box-shadow: -1px 1px 5px 0px rgba(172, 172, 172, 0.75);
+                    -moz-box-shadow: -1px 1px 5px 0px rgba(255, 255, 255, 0.75);
+    
+                    .label {
+                        text-align: left;
+    
+                        h1 {
+                            color: #000047;
+                            font-size: 1.5rem;
+    
+                        }
+    
+                        img {
+                            width: 100%;
+                            height: 8rem;
+                            border: 3px solid #fff;
+                            object-fit: cover;
+                        }
+                    }
+    
+                    .delete {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        padding: 0.4rem;
+                        cursor: pointer;
+                        font-size: 0.8rem;
+                        color: #ff0000;
+                        background-color: #4700005d;
+                    }
+    
+                    .details {
+                        padding-left: 1rem;
+    
+                        h2 {
+                            font-size: 1rem;
+                            color: #000047;
+                            text-decoration: underline;
+                        }
+    
+                        .detail-item {
+                            display: flex;
+                            gap: 0.4rem;
+                            line-height: 1.5rem;
+    
+                            .itemKey {
+                                color: #000047;
+                            }
+    
+                            .itemValue {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+    
+                .right {
+                    flex: 2;
+                }
+            }
+    
+            .bottom {
+                padding: 1rem;
+    
+                .stats {
+                    padding: 1rem;
+                    box-shadow: -1px 1px 5px 0px rgba(180, 180, 180, 0.75);
+                    -webkit-box-shadow: -1px 1px 5px 0px rgba(172, 172, 172, 0.75);
+                    -moz-box-shadow: -1px 1px 5px 0px rgba(255, 255, 255, 0.75);
+                }
+            }
+        }
+    
+    
+    }
+}

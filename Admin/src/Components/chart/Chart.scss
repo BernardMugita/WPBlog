@@ -1,0 +1,39 @@
+.Chart{
+    padding: 1rem;
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: gray;
+    overflow-x: scroll;
+    box-shadow: -1px 1px 5px 0px rgba(180, 180, 180, 0.75);
+    -webkit-box-shadow: -1px 1px 5px 0px rgba(172, 172, 172, 0.75);
+    -moz-box-shadow: -1px 1px 5px 0px rgba(255, 255, 255, 0.75);
+    
+    .title{
+        margin-bottom: 1rem;
+        color: #000047;
+    }
+    .chartGrid{
+        stroke: #000047;
+    }
+}
+
+@media only screen and (min-width: 660px) {
+    .Chart{
+        padding: 1rem;
+        border: 1px solid #fff;
+        background-color: #fff;
+        color: gray;
+        flex: 2;
+        box-shadow: -1px 1px 5px 0px rgba(180, 180, 180, 0.75);
+        -webkit-box-shadow: -1px 1px 5px 0px rgba(172, 172, 172, 0.75);
+        -moz-box-shadow: -1px 1px 5px 0px rgba(255, 255, 255, 0.75);
+        
+        .title{
+            margin-bottom: 1rem;
+            color: #000047;
+        }
+        .chartGrid{
+            stroke: #000047;
+        }
+    }
+}

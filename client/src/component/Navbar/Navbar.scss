@@ -68,7 +68,40 @@
                 border-top: 2px solid red;
             }
         }
+
     }
 
+    .screen-bar{
+        display: none;
+    }
 
+}
+
+@media only screen and (min-width:990px) {
+    .Navbar{
+        .phone-bar{
+            #reorder{
+                display: none;
+            }
+        }
+        .screen-bar{
+            display: block;
+            padding: 0.3rem;
+            text-align: center;
+            
+            .screen-links{
+                margin-left: 2rem;
+                a{
+                    text-decoration: none;
+                    color: #000000;
+                    margin-right: 2rem;
+                    margin-right: 2rem;
+                }
+
+                a:hover{
+                    color: red;
+                }
+            }
+        }
+    }
 }

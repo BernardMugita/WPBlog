@@ -1,0 +1,187 @@
+.Featured {
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #000000;
+    box-shadow: -1px 1px 5px 0px rgba(180, 180, 180, 0.75);
+    -webkit-box-shadow: -1px 1px 5px 0px rgba(172, 172, 172, 0.75);
+    -moz-box-shadow: -1px 1px 5px 0px rgba(255, 255, 255, 0.75);
+
+    .top {
+        display: flex;
+        padding: 0.3rem;
+        background-color: #000047;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+        color: #fff;
+
+        h1 {
+            font-size: 1.5rem;
+            color: #6262ff;
+            height: 1rem;
+            margin-top: 0.2rem;
+        }
+    }
+
+    .bottom {
+        color: #fff;
+        padding: 0.1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        .featuredChart {
+            width: 200px;
+            height: auto;
+            
+            .title {
+                font-weight: 500;
+                color: #000047;
+                text-align: center;
+            }
+
+            .readers {
+                font-size: 1.5rem;
+                color: rgb(0, 0, 85);
+                text-align: center;
+            }
+
+            .desc {
+                font-size: 0.7rem;
+                color: gray;
+                text-align: center;
+            }
+        }
+
+        .targets {
+
+            .items {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    &.positive{
+                        color: green;
+                    }
+                    &.negative{
+                        color: red;
+                    }
+                }
+
+                .item h1 {
+                    font-size: 0.8rem;
+                    color: #000047;
+                }
+
+                .target-stats{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }            
+        }
+    }
+}
+
+@media only screen and (min-width: 660px) {
+    .Featured {
+        border: 1px solid #fff;
+        background-color: #fff;
+        color: #000000;
+        margin-right: 0.5rem;
+        flex: 1;
+        box-shadow: -1px 1px 5px 0px rgba(180, 180, 180, 0.75);
+        -webkit-box-shadow: -1px 1px 5px 0px rgba(172, 172, 172, 0.75);
+        -moz-box-shadow: -1px 1px 5px 0px rgba(255, 255, 255, 0.75);
+    
+        .top {
+            display: flex;
+            padding: 0.3rem;
+            background-color: #000047;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            color: #fff;
+    
+            h1 {
+                font-size: 1.5rem;
+                color: #6262ff;
+                height: 1rem;
+                margin-top: 0.2rem;
+            }
+        }
+    
+        .bottom {
+            color: #fff;
+            padding: 0.1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+    
+            .featuredChart {
+                width: 200px;
+                height: auto;
+                
+                .title {
+                    font-weight: 500;
+                    color: #000047;
+                    text-align: center;
+                }
+    
+                .readers {
+                    font-size: 1.5rem;
+                    color: rgb(0, 0, 85);
+                    text-align: center;
+                }
+    
+                .desc {
+                    font-size: 0.7rem;
+                    color: gray;
+                    text-align: center;
+                }
+            }
+    
+            .targets {
+    
+                .items {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+    
+                    .item {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                        &.positive{
+                            color: green;
+                        }
+                        &.negative{
+                            color: red;
+                        }
+                    }
+    
+                    .item h1 {
+                        font-size: 0.8rem;
+                        color: #000047;
+                    }
+    
+                    .target-stats{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                }            
+            }
+        }
+    }
+}

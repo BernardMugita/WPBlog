@@ -1,0 +1,183 @@
+.Blogpost {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    box-shadow: -1px 1px 5px 0px rgba(180, 180, 180, 0.75);
+    -webkit-box-shadow: -1px 1px 5px 0px rgba(172, 172, 172, 0.75);
+    -moz-box-shadow: -1px 1px 5px 0px rgba(255, 255, 255, 0.75);
+
+
+    img {
+        width: 100%;
+        height: 15rem;
+        object-fit: cover;
+    }
+
+    .blog-post {
+        padding: 0.5rem;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 2rem;
+
+        .category-container {
+            flex: 1;
+            color: gray;
+            font-size: 0.8rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .title-container {
+            color: #000047;
+            font-size: 0.45rem;
+            flex: 2;
+        }
+
+        .post-container {
+            margin-top: -2rem;
+            margin-bottom: 0.5rem;
+            font-family: monospace;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 8;
+            -webkit-box-orient: vertical;
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+            margin-bottom: 0.5rem;
+            font-size: 0.8rem;
+        }
+
+        .meta-tags {
+            font-size: 0.7rem;
+            display: flex;
+            gap: 1rem;
+            flex: 2;
+            color: gray;
+
+            .date {
+                margin-right: 0.3rem;
+            }
+        }
+
+        .user-actions {
+            justify-content: left;
+            flex: 0.5;
+            display: flex;
+            gap: 1rem;
+
+            .view {
+                border: none;
+                color: #6262ff;
+                padding: 0.5rem;
+                border-radius: 10px;
+                background-color: #0000ff38;
+                float: right;
+            }
+
+            .delete {
+                border: none;
+                padding: 0.5rem;
+                color: red;
+                border-radius: 10px;
+                background-color: rgba(255, 0, 0, 0.202);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:660px) {
+    .Blogpost {
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        color: #000000;
+        box-shadow: -1px 1px 5px 0px rgba(180, 180, 180, 0.75);
+        -webkit-box-shadow: -1px 1px 5px 0px rgba(172, 172, 172, 0.75);
+        -moz-box-shadow: -1px 1px 5px 0px rgba(255, 255, 255, 0.75);
+    
+    
+        img {
+            width: 100%;
+            height: 15rem;
+            object-fit: cover;
+        }
+    
+        .blog-post {
+            padding: 0.5rem;
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 2rem;
+    
+            .category-container {
+                flex: 1;
+                color: gray;
+                font-size: 0.8rem;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+    
+            .title-container {
+                color: #000047;
+                font-size: 0.45rem;
+                flex: 2;
+            }
+    
+            .post-container {
+                margin-top: -2rem;
+                margin-bottom: 0.5rem;
+                font-family: monospace;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 8;
+                -webkit-box-orient: vertical;
+            }
+    
+            a {
+                text-decoration: none;
+                color: red;
+                margin-bottom: 0.5rem;
+                font-size: 0.8rem;
+            }
+    
+            .meta-tags {
+                font-size: 0.7rem;
+                display: flex;
+                gap: 1rem;
+                flex: 2;
+                color: gray;
+    
+                .date {
+                    margin-right: 0.3rem;
+                }
+            }
+    
+            .user-actions {
+                justify-content: left;
+                flex: 0.5;
+                display: flex;
+                gap: 1rem;
+    
+                .view {
+                    border: none;
+                    color: #6262ff;
+                    padding: 0.5rem;
+                    border-radius: 10px;
+                    background-color: #0000ff38;
+                }
+    
+                .delete {
+                    border: none;
+                    padding: 0.5rem;
+                    color: red;
+                    border-radius: 10px;
+                    background-color: rgba(255, 0, 0, 0.202);
+                }
+            }
+        }
+    }
+}

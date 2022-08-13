@@ -1,0 +1,119 @@
+.Home {
+    
+
+    .sidebar {
+        display: none;
+    }
+
+    .body-component {
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .navbar {
+            border-bottom: 1px solid #fff;
+        }
+
+        .widgets {
+            padding: 0.5rem;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .charts-container {
+            padding: 1rem;
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+
+            .chart{
+                
+                overflow-x: scroll;
+            }
+
+        }
+
+        .listContainer {
+            padding: 1rem;
+            background-color: #fff;
+            color: #fff;
+            height: 15rem;
+
+            .table {
+                overflow-x: scroll;
+                padding: 1rem;
+                box-shadow: -1px 1px 5px 0px rgba(180, 180, 180, 0.75);
+                -webkit-box-shadow: -1px 1px 5px 0px rgba(172, 172, 172, 0.75);
+                -moz-box-shadow: -1px 1px 5px 0px rgba(255, 255, 255, 0.75);
+            }
+
+        }
+    }
+
+}
+
+@media only screen and (min-width: 660px) {
+    .Home {
+        display: flex;
+    
+        .sidebar {
+            display: block;
+            flex: 1;
+        }
+    
+        .body-component {
+            flex: 5;
+            background-color: rgb(255, 255, 255);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+    
+            .navbar {
+                border-bottom: 1px solid #fff;
+            }
+    
+            .widgets {
+                padding: 1rem;
+                display: flex;
+                gap: 0.5rem;
+                justify-content: center;
+                align-items: center;
+    
+            }
+    
+            .charts-container {
+                padding: 1rem;
+                display: flex;
+                flex-direction: row;
+    
+                .featured{
+                    flex: 1;
+                    width: 100%;
+                }
+    
+                .chart{
+                   flex: 2;
+                   width: 100%;
+                }
+    
+            }
+    
+            .listContainer {
+                padding: 1rem;
+                background-color: #fff;
+                color: #fff;
+    
+                .table {
+                    padding: 1rem;
+                    box-shadow: -1px 1px 5px 0px rgba(180, 180, 180, 0.75);
+                    -webkit-box-shadow: -1px 1px 5px 0px rgba(172, 172, 172, 0.75);
+                    -moz-box-shadow: -1px 1px 5px 0px rgba(255, 255, 255, 0.75);
+                }
+    
+            }
+        }
+    
+    }
+    
+}

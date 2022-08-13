@@ -1,0 +1,123 @@
+.Contacts {
+    color: black;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(../../Resoources//character.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+    form {
+        background-color: #fff;
+        padding: 2rem;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 45px;
+        border-radius: 10px;
+        font-size: 0.8rem;
+
+        h1{
+            color: red;
+        }
+
+        .form-item {
+            display: flex;
+            
+            margin-bottom: 2rem;
+            flex-direction: column;
+
+            input {
+                padding: 0.5rem;
+                border: none;
+                border-bottom: 1px solid red;
+                outline: none;
+                font-family: monospace;
+            }
+
+            textarea {
+                padding: 0.5rem;
+                border: 1px solid red;
+                border-radius: 10px;
+                outline: none;
+                font-family: monospace;
+            }
+
+        }
+
+        button {
+            width: 40%;
+            padding: 0.5rem;
+            background-color: red;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            align-self: center;
+            cursor: pointer;
+        }
+
+        .result{
+            color: green;
+        }
+    }
+}
+
+@media only screen and (min-width: 990px) {
+    .Contacts {
+        color: black;
+        background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(../../Resoources//character.jpg);
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+    
+        form {
+            background-color: #fff;
+            padding: 2rem;
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 100px;
+            left: 450px;
+            border-radius: 10px;
+    
+            .form-item {
+                display: flex;
+                gap: 3rem;
+                margin-bottom: 2rem;
+                flex-direction: row;
+                align-items: center;
+                justify-content: end;
+    
+                input {
+                    padding: 0.5rem;
+                    border: none;
+                    border-bottom: 1px solid red;
+                    outline: none;
+                    font-family: monospace;
+                    width: 60%;
+                }
+    
+                textarea {
+                    padding: 0.5rem;
+                    border: 1px solid red;
+                    border-radius: 10px;
+                    outline: none;
+                    font-family: monospace;
+                }
+    
+            }
+    
+            button {
+                width: 40%;
+                padding: 0.5rem;
+                background-color: red;
+                color: #fff;
+                border: none;
+                border-radius: 10px;
+                align-self: center;
+                cursor: pointer;
+            }
+        }
+    }
+}

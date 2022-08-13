@@ -1,0 +1,116 @@
+.Widget {
+    padding: 0.5rem;
+    text-align: center;
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #000000;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    box-shadow: -1px 1px 5px 0px rgba(180, 180, 180, 0.75);
+    -webkit-box-shadow: -1px 1px 5px 0px rgba(172, 172, 172, 0.75);
+    -moz-box-shadow: -1px 1px 5px 0px rgba(255, 255, 255, 0.75);
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: left;
+
+        span {
+            margin-bottom: 0.5rem;
+            font-size: 0.8rem;
+        }
+
+        .title {
+            color: #000047;
+            font-weight: 700;
+        }
+
+        .id {
+            color: #5d5d5d;
+        }
+
+        .link {
+            display: none;
+        }
+    }
+
+    .right {
+        display: none;
+    }
+}
+
+@media only screen and(min-width:660px) {
+    .Widget {
+        padding: 1rem;
+        border: 1px solid #fff;
+        background-color: #fff;
+        color: #000000;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        box-shadow: -1px 1px 5px 0px rgba(180, 180, 180, 0.75);
+        -webkit-box-shadow: -1px 1px 5px 0px rgba(172, 172, 172, 0.75);
+        -moz-box-shadow: -1px 1px 5px 0px rgba(255, 255, 255, 0.75);
+    
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: left;
+    
+            span {
+                margin-bottom: 0.5rem;
+            }
+    
+            .title {
+                color: #000047;
+                font-weight: 700;
+                font-size: 0.9rem;
+            }
+    
+            .id {
+                color: #5d5d5d;
+            }
+    
+            .link {
+                font-size: 0.7rem;
+                border-bottom: 1px solid #5d5d5d;
+                width: max-content;
+                color: #000047;
+                display: block;
+            }
+        }
+    
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 2rem;
+            display: block;
+    
+            .percentage {
+                font-size: 1rem;
+                display: flex;
+    
+                &.positive {
+                    color: green;
+                }
+    
+                &.negative {
+                    color: red;
+                }
+            }
+    
+            #icon{
+                padding: 0.1rem;
+                background-color: red;
+                border-radius: 10px;
+                align-self: flex-end;
+            }
+        }
+    }
+}

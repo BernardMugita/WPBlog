@@ -1,0 +1,99 @@
+.Categorycomponent {
+    margin: 0.5rem;
+    padding-right: 2rem;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: -1px 1px 5px 0px rgba(114, 114, 114, 0.75);
+    -webkit-box-shadow: -1px 1px 5px 0px rgba(141, 141, 141, 0.75);
+    -moz-box-shadow: -1px 1px 5px 0px rgba(138, 138, 138, 0.75);
+
+    .category-details {
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+
+        #vert{
+            flex: 0.1;
+            display: none;
+        }
+
+        .categoryname {
+            flex: 1;
+            color: #000047;
+            font-size: 0.9rem;
+
+            a {
+                text-decoration: none;
+                color: #000047;
+            }
+        }
+
+        .date {
+            flex: 1;
+            text-align: right;
+            color: gray;
+            font-size: 0.7rem;
+        }
+
+        .no-of-posts {
+            flex: 1;
+            text-align: left;
+        }
+    }
+}
+
+@media only screen and (min-width: 660px) {
+    .Categorycomponent {
+        margin: 0.5rem;
+        padding-right: 2rem;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: -1px 1px 5px 0px rgba(114, 114, 114, 0.75);
+        -webkit-box-shadow: -1px 1px 5px 0px rgba(141, 141, 141, 0.75);
+        -moz-box-shadow: -1px 1px 5px 0px rgba(138, 138, 138, 0.75);
+    
+        .featured-image img {
+            width: 100%;
+            height: 8rem;
+            border-radius: 5px 5px 0px 0px;
+            object-fit: cover;
+        }
+    
+        .category-details {
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+    
+            #vert{
+                display: block;
+                flex: 0.1;
+            }
+    
+            .categoryname {
+                flex: 1;
+                color: #000047;
+                font-size: 0.9rem;
+    
+                a {
+                    text-decoration: none;
+                    color: #000047;
+                }
+            }
+    
+            .date {
+                flex: 1;
+                text-align: right;
+                color: gray;
+                font-size: 0.7rem;
+            }
+    
+            .no-of-posts {
+                flex: 1;
+                text-align: left;
+            }
+        }
+    }
+}

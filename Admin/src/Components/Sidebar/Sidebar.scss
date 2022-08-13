@@ -1,0 +1,122 @@
+.Sidebar {
+    background-color: #000047;
+    height: 100vh;
+    overflow-y: scroll;
+    width: 100%;
+
+    .heading {
+        color: #fff;
+        height: 15rem;
+        display: flex;
+        font-size: 0.7rem;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #6262ff;
+        background-color: #000047;
+    }
+
+    .tab {
+        background-color: #000047;
+        padding: 0.5rem;
+        color: #fff;
+        margin: 0.3rem;
+        text-decoration: none;
+        display: flex;
+        font-size: 0.9rem;
+        border-bottom: 1px solid #6262ff;
+        font-weight: 700;
+        align-items: center;
+        
+    }
+
+    a {
+        text-decoration: none;
+        color: #6262ff;
+        background-color: #000047;
+        margin: 0.5rem;
+        font-size: 0.8rem;
+    }
+    .resize{
+        font-size: 1.3rem; 
+        margin-top: 0.3rem; 
+        color: #fff;
+    }
+    
+    p{
+        color: #fff;
+        font-weight: 600;
+        font-size: 1rem;
+        margin-left: 0.5rem;
+        
+    }
+    li{
+        text-decoration: none;
+        color: #6262ff;
+        background-color: #000047;
+        margin: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+}
+
+@media  only screen and(min-width:660px) {
+    .Sidebar {
+        background-color: #000047;
+        height: 100%;
+        overflow-y: scroll;
+        width: 100%;
+        display: block;
+    
+        .heading {
+            color: #fff;
+            font-size: 0.7rem;
+            border: 1px solid #6262ff;
+            background-color: #000047;
+        }
+        
+        p{
+            color: #fff;
+            font-weight: 600;
+            font-size: 1rem;
+            margin-left: 0.5rem;
+            
+        }
+    
+        .tab {
+            background-color: #000047;
+            padding: 0.5rem;
+            color: #fff;
+            margin: 0.3rem;
+            text-decoration: none;
+            display: flex;
+            font-size: 0.9rem;
+            border-bottom: 1px solid #6262ff;
+            font-weight: 700;
+            align-items: center;
+            
+        }
+    
+        a {
+            text-decoration: none;
+            color: #6262ff;
+            background-color: #000047;
+            margin: 0.5rem;
+            font-size: 0.8rem;
+        }
+        .resize{
+            font-size: 1.3rem; 
+            margin-top: 0.3rem; 
+            color: #fff;
+        }
+        
+        li{
+            text-decoration: none;
+            color: #6262ff;
+            background-color: #000047;
+            margin: 0.5rem;
+            font-size: 0.8rem;
+        }
+    
+    }
+    
+}

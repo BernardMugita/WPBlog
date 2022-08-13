@@ -1,28 +1,60 @@
-.Categories{
+.Categories {
     display: flex;
     flex-direction: column;
     padding: 1rem;
     text-align: left;
     height: 100vh;
 
-    .routes{
+    .routes {
         display: flex;
         font-size: 0.7rem;
         align-items: left;
 
-        a{
+        p {
             text-decoration: underline;
             color: red;
         }
     }
 
-    .title{
+    .title {
         color: #fff;
         font-size: 1.5rem;
     }
-    .category-body{
-        padding: 1rem;
-        display: flex;
-        flex-wrap: wrap;
+
+    .category-body {
+        
+        .components {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0.5rem;
+        }
+
+        .sidebar {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width:660px) {
+    .Categories {
+        height: 100%
+        ;
+
+        .category-body {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1rem;
+            gap: 1rem;
+
+            .components {
+                flex: 3;
+            }
+
+            .sidebar {
+                display: block;
+                flex: 1;
+                padding: 1rem;
+            }
+        }
     }
 }

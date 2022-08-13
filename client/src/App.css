@@ -1,9 +1,17 @@
 .App{
   text-align: center;
   height: 100%;
-  background-color: #181818;
+  background-color: #ffffff;
   color: #fff;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: monospace;
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width:990px) {
+  .App{
+    font-size: 1rem;
+  }
 }

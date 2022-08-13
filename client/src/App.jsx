@@ -6,6 +6,7 @@ import Navbar from './component/Navbar/Navbar';
 import Singlepost from './pages/SinglePost/Singlepost';
 import Categories from './pages/Categories/Categories';
 import Singlecategory from './pages/Singlecategory/Singlecategory'
+import Contact from './pages/Contact/Contact';
 
 
 function App() {
@@ -17,8 +18,9 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route path='/categories' element={<Categories />} />
-          <Route path='/categories/categoryname' element={<Singlecategory />} />
-          <Route path='/category/categoryname/:id' element={<Singlepost />} />
+          <Route path='/categories/:category' element={<Singlecategory />} />
+          <Route path='/categories/:category/:id' element={<Singlepost />} />
+          <Route path='/contacts' element={<Contact />} />
         </Routes>
         <Footer />
       </BrowserRouter>

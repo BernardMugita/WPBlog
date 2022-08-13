@@ -1,0 +1,47 @@
+.like-button-wrapper {
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 0.1rem;
+    width: 3.9rem;
+
+    &::before {
+        content: "";
+        z-index: 3;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        will-change: background-color;
+        transition: background-color 0.3s, transform 0.3s;
+        background-color: #ff000035;
+        box-shadow: #0000473c;
+    }
+
+    &.liked {
+        background-color: red;
+        border: 1px solid #fff;
+        color: #fff;
+        &::before {
+            background-color: transparent;
+
+        }
+    }
+
+    .like-button {
+        display: flex;
+        gap: 0.5rem;
+        
+        .suffix {
+            opacity: 0;
+            transition: opacity 300ms, transform 300ms;
+            transform: translateX(15px);
+            
+
+            &.liked {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    }
+}
